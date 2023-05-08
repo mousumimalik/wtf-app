@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/wtf-app/static/css/main.de56eb6f.css",
-    "main.js": "/wtf-app/static/js/main.64cce74f.js",
+    "main.css": "/wtf-app/static/css/main.786a225f.css",
+    "main.js": "/wtf-app/static/js/main.dfe83a68.js",
     "static/media/Workout.jpg": "/wtf-app/static/media/Workout.425cb24af29895ac6007.jpg",
     "static/media/DumbbleGirl.gif": "/wtf-app/static/media/DumbbleGirl.b5ce9b2e337e5e6724f8.gif",
     "static/media/wtf-hero.jpeg": "/wtf-app/static/media/wtf-hero.de10d75478dbe84abc4a.jpeg",
     "index.html": "/wtf-app/index.html",
-    "main.de56eb6f.css.map": "/wtf-app/static/css/main.de56eb6f.css.map",
-    "main.64cce74f.js.map": "/wtf-app/static/js/main.64cce74f.js.map"
+    "main.786a225f.css.map": "/wtf-app/static/css/main.786a225f.css.map",
+    "main.dfe83a68.js.map": "/wtf-app/static/js/main.dfe83a68.js.map"
   },
   "entrypoints": [
-    "static/css/main.de56eb6f.css",
-    "static/js/main.64cce74f.js"
+    "static/css/main.786a225f.css",
+    "static/js/main.dfe83a68.js"
   ]
 }
