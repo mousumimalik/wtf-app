@@ -1,4 +1,5 @@
-{"homepage": "https://mousumimalik.github.io/wtf-app",
+{
+  "homepage": "https://mousumimalik.github.io/wtf-app",
   "name": "wtf-app",
   "version": "0.1.0",
   "private": true,
