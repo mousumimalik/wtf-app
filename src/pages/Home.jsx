@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Hero } from "../assets/datas/Images";
 import SearchInput from "../components/SearchInput";
 import Footer from "../components/Footer";
-import SearchInpLoc from "../components/filters/SearchInpLoc";
 import AllGyms from "../components/AllGyms";
 
 import {
@@ -85,6 +84,8 @@ function Home() {
               newerArr.push(gym);
             }
           }
+
+          return gym;
         });
 
       if (newerArr.length > 0) {
@@ -113,6 +114,8 @@ function Home() {
         if (gymAdd.includes(city.toLowerCase())) {
           gymAddresses.push(gym);
         }
+
+        return gym;
       });
     } else {
       gymData &&
@@ -122,6 +125,8 @@ function Home() {
           if (gymAdd.includes(city.toLowerCase())) {
             gymAddresses.push(gym);
           }
+
+          return gym;
         });
     }
 
