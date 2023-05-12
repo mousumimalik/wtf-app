@@ -18,22 +18,20 @@ export const gymApi = createApi({
         method: "GET",
       }),
     }),
-    getGymPlans: builder.mutation({
-      query: (userId) => {
-        console.log("USER ID=>", userId);
-
-        return {
-          url: "gym/plan",
-          method: "POST",
-          body: userId,
-          headers: {
-            "Content-type": "application/json; charset=UTF-8",
-          },
-        };
-      },
+    getGymPlan: builder.query({
+      query: (userId) => ({
+        url: "gym/plan",
+        method: "POST",
+        body: {
+          "gym_id": userId,
+        },
+      }),
     }),
   }),
 });
 
-export const { useGetGymPlacesQuery, useGetNearestGymsQuery, getGymPlans } =
-  gymApi;
+export const {
+  useGetGymPlacesQuery,
+  useGetNearestGymsQuery,
+  useGetGymPlanQuery,
+} = gymApi;

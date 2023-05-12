@@ -1,11 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Workout } from "../assets/datas/Images";
+import Button from "./Button";
 
 function AllGyms({ gymData }) {
-  const onClickBookNow = (gym) => {
-    // console.log("gym=>", gym);
-  };
-
   return (
     <>
       <div className="w-full md:w-[95%] h-auto grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
@@ -13,10 +11,10 @@ function AllGyms({ gymData }) {
           gymData.map((gym, i) => (
             <div
               key={i}
-              className="h-[550px] md:h-[350px] flex justify-between items-center rounded-lg shadow-lg shadow-[#394867]"
+              className="h-[600px] md:h-[400px] flex flex-col md:flex-row justify-between items-center rounded-lg shadow-lg shadow-[#394867]"
             >
               <>
-                <div className="w-[40%] h-full">
+                <div className="w-full md:w-[40%] h-[50%] md:h-full">
                   {/* {gym.gallery &&
                     gym.gallery.map((img) => (
                       <img
@@ -32,7 +30,7 @@ function AllGyms({ gymData }) {
                     className="w-full h-full object-cover rounded-l-lg"
                   />
                 </div>
-                <div className="w-[60%] h-full flex flex-col justify-start items-center p-8">
+                <div className="w-full md:w-[60%] h-[60%] md:h-full flex flex-col justify-start items-center p-3 md:p-8">
                   <h4 className="text-white text-[25px] font-semibold font-serif tracking-wide mb-4 capitalize text-center">
                     {gym.gym_name && gym.gym_name}
                   </h4>
@@ -63,20 +61,11 @@ function AllGyms({ gymData }) {
                     </span>
                   </p>
 
-                  <button
-                    onClick={() => onClickBookNow(gym)}
-                    className="bg-[#d21515] text-white px-5 py-2 mt-10 cursor-pointer font-semibold font-serif tracking-wide rounded-sm hover:bg-red-500"
-                  >
-                    Book Now
-                  </button>
-
-                  {/* <Link
-                    to="/gym-plan"
-                    target="_blank"
-                    className="bg-[#d21515] text-white px-5 py-2 mt-10 cursor-pointer font-semibold font-serif tracking-wide rounded-sm hover:bg-red-500"
-                  >
-                    Book Now
-                  </Link> */}
+                  {gym.user_id && (
+                    <Link to={`/gym-plan/${gym.user_id}`}>
+                      <Button text="Book Now" />
+                    </Link>
+                  )}
                 </div>
               </>
             </div>

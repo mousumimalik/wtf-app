@@ -21,8 +21,8 @@ function Navbar() {
           : "bg-transparent fixed w-full z-20 top-0 left-0"
       }
     >
-      <div className="w-[90%] flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link to="/" className="flex items-center">
+      <div className="w-full md:w-[90%] flex flex-wrap items-center justify-between mx-auto p-4">
+        <Link to="wtf-app/" className="flex items-center">
           <img src={Logo} className="h-8 mr-3" alt="Flowbite Logo" />
         </Link>
 
@@ -65,7 +65,7 @@ function Navbar() {
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-transparent md:dark:bg-transparent">
             <li>
               <Link
-                to="/"
+                to="wtf-app/"
                 className="block py-2 pl-3 pr-4 text-[#bdb9b9] font-serif bg-transparent rounded md:bg-transparent md:text-[#aea9a9] md:p-0 md:dark:text-[#fff] text-[22px] font-medium capitalize cursor-pointer tracking-wide"
                 aria-current="page"
               >
@@ -74,7 +74,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/"
+                to="wtf-app/"
                 className="block py-2 pl-3 pr-4 rounded font-serif hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#aea9a9] md:p-0 md:mx-8 md:dark:text-[#fff] dark:text-[#bdb9b9] dark:hover:bg-transparent dark:hover:text-[#bdb9b9] md:dark:hover:bg-transparent text-[22px] font-medium capitalize cursor-pointer tracking-wide"
               >
                 Fitness
@@ -82,7 +82,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/"
+                to="wtf-app/"
                 className="block py-2 pl-3 pr-4 rounded font-serif hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#aea9a9] md:p-0 md:mx-8 md:dark:text-[#fff] dark:text-[#bdb9b9] dark:hover:bg-transparent dark:hover:text-[#bdb9b9] md:dark:hover:bg-transparent text-[22px] font-medium capitalize cursor-pointer tracking-wide"
               >
                 About
@@ -90,7 +90,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/"
+                to="wtf-app/"
                 className="block py-2 pl-3 pr-4 rounded font-serif hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#aea9a9] md:p-0 md:mx-8 md:dark:text-[#fff] dark:text-[#bdb9b9] dark:hover:bg-transparent dark:hover:text-[#bdb9b9] md:dark:hover:bg-transparent text-[22px] font-medium capitalize cursor-pointer tracking-wide"
               >
                 Blog
@@ -98,7 +98,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/"
+                to="wtf-app/"
                 className="block py-2 pl-3 pr-4 rounded font-serif hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#aea9a9] md:p-0 md:dark:text-[#fff] dark:text-[#bdb9b9] dark:hover:bg-transparent dark:hover:text-[#bdb9b9] md:dark:hover:bg-transparent text-[22px] font-medium capitalize cursor-pointer tracking-wide"
               >
                 FAQ

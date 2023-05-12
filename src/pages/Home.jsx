@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
 import { Hero } from "../assets/datas/Images";
 import SearchInput from "../components/SearchInput";
-import Footer from "../components/Footer";
 import AllGyms from "../components/AllGyms";
 
 import {
@@ -33,6 +31,7 @@ function Home() {
   if (getGymPlacesInfo && getGymPlacesInfo.status === "fulfilled") {
     gymPlaces = getGymPlacesInfo.data.data;
   }
+
 
   if (getNearestGymInfo.isLoading) {
     return <IsLoading />;
@@ -139,10 +138,12 @@ function Home() {
     setOpen(false);
   };
 
+
+  console.log(searchResults, " === ", filteredItem);
+
+
   return (
     <div className="w-full h-auto flex flex-col justify-center items-center relative">
-      <Navbar />
-
       <div className="w-full h-[600px]">
         <img src={Hero} alt="Hero" className="w-full h-full object-cover" />
       </div>
@@ -161,7 +162,12 @@ function Home() {
                 Location
               </h3>
 
-              <SearchInpLoc />
+              <input
+                type="search"
+                id="default-search"
+                className="block w-full p-4 pl-10 text-sm font-thin font-serif border-2 border-[#FFFFFF] rounded-lg bg-gray-50 focus:ring-[#920909] focus:border-[#920909] dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#737373] dark:focus:ring-[#920909] dark:focus:border-[#920909] tracking-wide cursor-pointer"
+                placeholder=""
+              />
             </div> */}
 
             <div className="w-full h-auto md:mt-16">
@@ -212,8 +218,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
